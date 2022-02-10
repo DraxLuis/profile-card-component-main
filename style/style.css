@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: hsl(185, 75%, 39%);
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: -90% -500px, 170% 400px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.ctn-p{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctn-n{
+    width: 370px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.ctn-n__arriba{
+    text-align: center;
+    border-bottom: 1px solid hsl(0, 10%, 88%);
+}
+
+.ctn-n__arriba h2{
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 60px;
+}
+
+.ctn-n__arriba h3{
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+    font-size: 15.5px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.numero_26{
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.color-fondo{
+    background-image: url(../images/bg-pattern-card.svg);
+    height: 145px;
+    border-radius: 10px 10px 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/**ABAJO**/
+
+.ctn-p__abajo{
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ align-items: center;
+}
+
+.ctn-p__abajo h2{
+    font-weight: 700;
+    font-size: 18px;
+    color: hsl(229, 23%, 23%);
+    text-align: center;
+    margin-top: 30px;
+}
+
+.ctn-p__abajo p{
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    color: hsl(227, 10%, 46%);
+    padding-bottom: 20px;
+}
+
+.color-fondo img{
+    border-radius: 50%;
+    border: 4px solid #fff;
+    position: relative;
+    top: 5.5rem;
+}
+
+/**MEDIA QUERIE**/
+
+@media screen and (max-width: 768px) {
+    body{
+        background-position: 129% -500px, -7% 400px;
+    }
+    .ctn-n{
+        width: 320px;
+    }
+}
